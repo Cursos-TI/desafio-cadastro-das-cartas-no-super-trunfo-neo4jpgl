@@ -4,49 +4,19 @@
 //Versão : 1 basica do programa super trunfonivel novato primeira postagem
 //Disciplina Introdução a programação em c
 //data :aulas eperimentais adiantando conteúdo 04/07/2025
-//obs caracateres sem acentuação de proposito pois ainda nao tive aula sobre isso
-
-
-/*proposito : 
-
-um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
-
- 
-
-Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
- 
-Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
- 
-Nome da Cidade: O nome da cidade. Tipo: char[] (string)
- 
-População: O número de habitantes da cidade. Tipo: int
- 
-Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
- 
-PIB: O Produto Interno Bruto da cidade. Tipo: float
- 
-Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
- 
-
-Após o usuário inserir os dados de cada carta, seu programa 
-deve exibir na tela as informações cadastradas, de forma 
-organizada e legível. Para cada carta, imprima cada informação
- em uma linha separada, com uma descrição clara. 
-
- Fim do comentario de proposito */
 
 #include <stdio.h>
-#include <string.h>
+
 
 int main() {
     // Declaração das variáveis para a Carta 1
-    char estado1;//ex ceara
-    char codigo1[4];//ex A01
-    char nomeCidade1[50];//ex fortaleza
-    int populacao1;//2.000.000
-    float a rea1;//ex 10
-    float pib1;//ex 30.000.000
-    int pontosTuristicos1;//ex 50
+    char estado1;
+    char codigo1[4];
+    char nomeCidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontosTuristicos1;
 
     // Declaração das variáveis para a Carta 2
     char estado2;
@@ -64,10 +34,10 @@ int main() {
     printf("Codigo da Carta (ex: A01): ");
     scanf("%s", codigo1);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", nomeCidade1);
+    scanf(" %s", nomeCidade1);
     printf("Populacao: ");
     scanf("%d", &populacao1);
-    printf("Area (em kmquadrado): ");
+    printf("Area (em km quadrados): ");
     scanf("%f", &area1);
     printf("PIB (em bilhoes de reais): ");
     scanf("%f", &pib1);
@@ -81,10 +51,10 @@ int main() {
     printf("Codigo da Carta (ex: B02): ");
     scanf("%s", codigo2);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", nomeCidade2);
+    scanf(" %s", nomeCidade2);
     printf("Populacao: ");
     scanf("%d", &populacao2);
-    printf("Area (em km quadrado: ");
+    printf("Area (em km quadrados): ");
     scanf("%f", &area2);
     printf("PIB (em bilhoes de reais): ");
     scanf("%f", &pib2);
@@ -97,7 +67,7 @@ int main() {
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Populacao: %d\n", populacao1);
-    printf("Area: %.2f em km quadrado\n", area1);
+    printf("Area: %.2f em km quadrados\n", area1);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
 
@@ -107,8 +77,9 @@ int main() {
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("Populacao: %d\n", populacao2);
-    printf("Area: %.2f em km quadrado\n", area2);
+    printf("Area: %.2f em km quadrados\n", area2);
     printf("PIB: %.2f bilhoes de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
+}
