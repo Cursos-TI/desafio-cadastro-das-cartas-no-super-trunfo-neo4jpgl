@@ -44,7 +44,7 @@ int main() {
     char codigo1[4];//ex A01
     char nomeCidade1[50];//ex fortaleza
     int populacao1;//2.000.000
-    float a rea1;//ex 10
+    float area1;//ex 10
     float pib1;//ex 30.000.000
     int pontosTuristicos1;//ex 50
 
@@ -112,3 +112,5 @@ int main() {
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
+
+}
